@@ -1,0 +1,2 @@
+・tailwindの理解
+・metadata設定の理解
