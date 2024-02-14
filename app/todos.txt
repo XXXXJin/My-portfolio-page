@@ -1,2 +1,8 @@
 ・tailwindの理解
 https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state
+
+・サイトiconの追加
+
+・react-icons
+
+・framer motion
