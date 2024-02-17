@@ -1,7 +1,9 @@
+import Intro from "@/components/intro";
+
 export default function LandingPage() {
   return (
-    <main>
-      
+    <main className="flex flex-col items-center px-4">
+      <Intro></Intro>
     </main>
-  )
+  );
 }
