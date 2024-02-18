@@ -3,8 +3,11 @@
 import React from "react";
 import SectionHeading from "./sectionHeading";
 import { motion } from "framer-motion";
+import { useSectionInview } from "@/lib/hooks";
 
 export default function About() {
+  const { ref } = useSectionInview({ activeSection: "About", amount: 0.5 });
+
   return (
     <motion.section
       className="mt-28 mb-28 px-4 max-w-[45rem] text-center leading-8 sm:mb:40 sm:mt-0 scroll-mt-28"
@@ -12,6 +15,7 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
+      ref={ref}
     >
       <SectionHeading>About Me</SectionHeading>
       <p>

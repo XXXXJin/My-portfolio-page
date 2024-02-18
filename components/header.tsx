@@ -1,13 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { links } from "@/lib/data";
 import clsx from "clsx";
+import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+import {
+  selectActiveSection,
+  selectTimeOfLastClick,
+  setActiveSection,
+  setTimeOfLastClick,
+} from "@/lib/features/headerSlice";
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
+  const activeSection = useAppSelector(selectActiveSection);
+  const dispatch = useAppDispatch();
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -31,7 +39,10 @@ export default function Header() {
                   "flex w-full items-center justify-center p-3 hover:text-gray-900",
                   { "text-gray-950": activeSection === link.name }
                 )}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  dispatch(setActiveSection(link.name));
+                  dispatch(setTimeOfLastClick(Date.now()));
+                }}
               >
                 {link.name}
                 {link.name === activeSection && (

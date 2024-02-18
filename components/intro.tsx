@@ -1,16 +1,23 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { BsDownload } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
+import { useSectionInview } from "@/lib/hooks";
 
 export default function Intro() {
+  const { ref } = useSectionInview({ activeSection: "Home", amount: 0.5 });
+
   return (
-    <section className="max-w-[50rem] text-center scroll-mt-[100rem]" id="home">
+    <section
+      className="max-w-[50rem] text-center scroll-mt-[100rem]"
+      id="home"
+      ref={ref}
+    >
       <div className="flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}

@@ -5,8 +5,11 @@ import SectionHeading from "./sectionHeading";
 import { projectsData } from "@/lib/data";
 import { motion } from "framer-motion";
 import Project from "./project";
+import { useSectionInview } from "@/lib/hooks";
 
 export default function Projects() {
+  const { ref } = useSectionInview({ activeSection: "Projects", amount: 0.7 });
+
   return (
     <motion.section
       className="mb-28 scroll-mt-28"
@@ -14,6 +17,7 @@ export default function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="projects"
+      ref={ref}
     >
       <SectionHeading>My Projects</SectionHeading>
       <div className="flex flex-col gap-5">
