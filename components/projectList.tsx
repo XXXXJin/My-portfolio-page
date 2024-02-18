@@ -15,7 +15,7 @@ export default function Projects() {
       transition={{ delay: 0.175 }}
       id="projects"
     >
-      <SectionHeading>My projects</SectionHeading>
+      <SectionHeading>My Projects</SectionHeading>
       <div className="flex flex-col gap-5">
         {projectsData.map((project, index) => {
           return (

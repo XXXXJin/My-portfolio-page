@@ -13,7 +13,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>About Me</SectionHeading>
       <p>
         プログラミングに魅了されてから、独学で始め、IT業界に入って、すでに五年目となります。
         プログラミングの一番の魅力は、問題解決にあると思います。問題を解決し、答えを見つけた時の達成感が大好きです。
