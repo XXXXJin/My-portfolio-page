@@ -17,7 +17,7 @@ export default function Intro() {
           animate={{ opacity: 1, scale: 1 }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+            src="/portrait.png"
             alt="自己紹介画像アイコン"
             width={192}
             height={192}
@@ -32,7 +32,11 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-extrabold">
-          こんにちは、私は金海旭と申します。
+          こんにちは、私は
+          <ruby>
+            金海旭<rt>キムヘウク</rt>
+          </ruby>
+          と申します。
         </span>
         フロントエンドエンジニアになって
         <span className="font-extrabold">4年</span>になります。
@@ -42,7 +46,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 font-medium"
       >
         {/* emailボタン */}
         <Link
@@ -62,7 +66,8 @@ export default function Intro() {
         </a>
         {/* githubリンク遷移ボタン */}
         <a
-          href=""
+          href="https://github.com/XXXXJin"
+          target="_blank"
           className="flex items-center p-4 bg-white rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition hover:bg-slate-50 gap-2 cursor-pointer border border-black/5"
         >
           <BsGithub />
