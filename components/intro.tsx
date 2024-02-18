@@ -10,7 +10,7 @@ import { BsGithub } from "react-icons/bs";
 
 export default function Intro() {
   return (
-    <section className="max-w-[50rem] text-center">
+    <section className="max-w-[50rem] text-center scroll-mt-[100rem]" id="home">
       <div className="flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
