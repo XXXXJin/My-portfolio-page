@@ -2,6 +2,7 @@ import About from "@/components/about";
 import Intro from "@/components/intro";
 import ProjectList from "@/components/projectList";
 import SectionDivider from "@/components/sectionDivider";
+import Skills from "@/components/skills";
 
 export default function LandingPage() {
   return (
@@ -10,6 +11,7 @@ export default function LandingPage() {
       <SectionDivider />
       <About />
       <ProjectList />
+      <Skills />
     </main>
   );
 }
