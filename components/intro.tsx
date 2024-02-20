@@ -1,10 +1,8 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
+import { motion } from "framer-motion";
 import { BsDownload } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { useSectionInview } from "@/lib/hooks";
@@ -55,19 +53,11 @@ export default function Intro() {
         transition={{ delay: 0.1 }}
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 font-medium"
       >
-        {/* emailボタン */}
-        <Link
-          href="#contact"
-          className="self-stretch flex items-center justify-center  py-3 px-4 bg-slate-900 text-white rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition hover:bg-slate-800 gap-2 cursor-pointer"
-        >
-          Contact me here
-          <BsArrowRight className="text-slate-400" />
-        </Link>
         {/* 履歴書ダウンロードボタン */}
         <a
           href="/CV.pdf"
           download
-          className="self-stretch flex items-center justify-center py-3 px-4 bg-white rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition hover:bg-slate-50 gap-2 cursor-pointer border border-black/5"
+          className="self-stretch flex items-center justify-center  py-3 px-4 bg-slate-900 text-white rounded-full outline-none hover:scale-110 active:scale-105 transition hover:bg-slate-800 gap-2 cursor-pointer"
         >
           Download CV <BsDownload className="text-slate-400" />
         </a>
@@ -75,7 +65,7 @@ export default function Intro() {
         <a
           href="https://github.com/XXXXJin"
           target="_blank"
-          className="flex items-center p-4 bg-white rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition hover:bg-slate-50 gap-2 cursor-pointer border border-black/5"
+          className="flex items-center p-4 bg-white rounded-full outline-none hover:scale-110 active:scale-105 transition hover:bg-slate-50 gap-2 cursor-pointer border border-black/5"
         >
           <BsGithub />
         </a>

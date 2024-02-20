@@ -8,7 +8,6 @@ import clsx from "clsx";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import {
   selectActiveSection,
-  selectTimeOfLastClick,
   setActiveSection,
   setTimeOfLastClick,
 } from "@/lib/features/headerSlice";
