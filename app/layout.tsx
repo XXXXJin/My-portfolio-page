@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import StoreProvider from "./storeProvider";
 import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/themeSwitch";
 
 const sawarabiGothic = Sawarabi_Gothic({
   weight: "400",
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <ThemeSwitch />
         </body>
       </html>
     </StoreProvider>
