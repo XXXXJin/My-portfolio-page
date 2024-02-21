@@ -17,7 +17,7 @@ export default function Skills() {
       animate={{ opacity: 1, y: 0 }}
     >
       <SectionHeading>My Skills</SectionHeading>
-      <ul className="flex justify-center flex-wrap gap-2 text-lg text-gray-800">
+      <ul className="flex justify-center flex-wrap gap-2 text-lg text-gray-600">
         {skillsData.map((skills, index) => {
           return (
             <motion.li

@@ -36,15 +36,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
       >
+        こんにちは、
         <span className="font-extrabold">
-          こんにちは、私は
+          私は
           <ruby>
             金海旭<rt>キムヘウク</rt>
           </ruby>
           と申します。
         </span>
-        フロントエンドエンジニアになって
-        <span className="font-extrabold">4年</span>になります。
+        フロントエンドエンジニアになって4年になります。
         日々進化するWebの世界とこれからも向き合っていきたいと思います。
       </motion.p>
       <motion.div

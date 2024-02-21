@@ -37,7 +37,7 @@ export default function Experience() {
                 <h3 className="text-sm font-bold text-gray-900 py-2">
                   {item.title}
                 </h3>
-                <p className="mb-4 text-base font-normal text-gray-700">
+                <p className="mb-4 text-base font-normal text-gray-600">
                   {item.description}
                 </p>
               </li>
