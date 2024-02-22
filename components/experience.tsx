@@ -30,14 +30,14 @@ export default function Experience() {
               key={index}
             >
               <li className="mb-10 ms-4">
-                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-500 dark:bg-gray-600"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
                   {item.data}
                 </time>
                 <h3 className="text-sm font-bold text-gray-900 py-2">
                   {item.title}
                 </h3>
-                <p className="mb-4 text-base font-normal text-gray-600">
+                <p className="mb-4 text-base font-normal text-gray-600 dark:text-slate-200">
                   {item.description}
                 </p>
               </li>

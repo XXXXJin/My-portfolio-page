@@ -18,7 +18,7 @@ export default function Project({ title, description, tags, imageUrl }: Props) {
   const opacityPrograss = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   return (
     <motion.section
-      className="bg-gray-100 max-w-[42rem] border rounded-md border-black/5 overflow-hidden relative hover:bg-gray-200 group"
+      className="bg-gray-100 max-w-[42rem] border rounded-md border-black/5 overflow-hidden relative hover:bg-gray-200 group dark:bg-gray-800 dark:hover:bg-gray-700"
       ref={projectRef}
       style={{
         scale: scalePrograss,
@@ -26,14 +26,16 @@ export default function Project({ title, description, tags, imageUrl }: Props) {
       }}
     >
       <div className="py-4 px-5 pb-8 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10">
-        <h3 className="text-2xl font-medium">{title}</h3>
-        <p className="my-2 leading-relaxed text-gray-600">{description}</p>
+        <h3 className="text-2xl font-medium dark:text-slate-200">{title}</h3>
+        <p className="my-2 leading-relaxed text-gray-600 dark:text-slate-300">
+          {description}
+        </p>
         <ul className="flex flex-wrap mt-4 gap-2">
           {tags.map((tag, index) => {
             return (
               <li
                 key={index}
-                className="bg-gray-500 px-3 py-1 text-[0.7rem] uppercase tracking-wide text-white rounded-full"
+                className="bg-gray-500 px-3 py-1 text-[0.7rem] uppercase tracking-wide text-white rounded-full dark:bg-gray-900"
               >
                 {tag}
               </li>

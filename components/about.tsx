@@ -18,7 +18,7 @@ export default function About() {
       ref={ref}
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="text-gray-600">
+      <p className="text-gray-600 dark:text-slate-200">
         プログラミングに魅了されてから、独学で始め、IT業界に入って、すでに五年目となります。
         プログラミングの一番の魅力は、問題解決にあると思います。問題を解決し、答えを見つけた時の達成感が大好きです。
         これまで、
@@ -26,7 +26,7 @@ export default function About() {
         などのスキルを使って、フロントエンド側の開発に携わってきました。
         さらなる挑戦と出会いを求め、今転職活動をしています。
       </p>
-      <p className="text-gray-600">
+      <p className="text-gray-600 dark:text-slate-200">
         プログラミングからリラックスしたい時は、私は映画鑑賞やゲームを楽しむのが好きです。英語学習も好きで、ほぼ毎日英語に触れるようにしています。
       </p>
     </motion.section>

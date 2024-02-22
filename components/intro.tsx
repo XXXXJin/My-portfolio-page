@@ -57,7 +57,7 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download
-          className="self-stretch flex items-center justify-center  py-3 px-4 bg-slate-900 text-white rounded-full outline-none hover:scale-110 active:scale-105 transition hover:bg-slate-800 gap-2 cursor-pointer"
+          className="self-stretch flex items-center justify-center  py-3 px-4 bg-slate-900 text-white rounded-full outline-none hover:scale-110 active:scale-105 transition hover:bg-slate-800 gap-2 cursor-pointer dark:text-slate-200 dark:hover:bg-gray-800"
         >
           Download CV <BsDownload className="text-slate-400" />
         </a>
@@ -65,7 +65,7 @@ export default function Intro() {
         <a
           href="https://github.com/XXXXJin"
           target="_blank"
-          className="flex items-center p-4 bg-white rounded-full outline-none hover:scale-110 active:scale-105 transition hover:bg-slate-50 gap-2 cursor-pointer border border-black/5"
+          className="flex items-center p-4 bg-white rounded-full outline-none hover:scale-110 active:scale-105 transition hover:bg-slate-50 gap-2 cursor-pointer border border-black/5 dark:bg-white/10 dark:text-white/60"
         >
           <BsGithub />
         </a>

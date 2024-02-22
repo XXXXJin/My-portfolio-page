@@ -39,7 +39,7 @@ export default function ThemeSwitch() {
     theme && (
       <button
         onClick={() => toggleTheme()}
-        className="fixed bottom-10 right-10 bg-white w-12 h-12 bg-opacity-70 backdrop-blur-lg border-white border-opacity-40 shadow-xl rounded-full flex items-center justify-center hover:scale-110 transition-all"
+        className="fixed bottom-10 right-10 bg-white w-12 h-12 bg-opacity-70 backdrop-blur-lg border-white border-opacity-40 shadow-xl rounded-full flex items-center justify-center hover:scale-110 transition-all dark:bg-gray-950"
       >
         {theme === "light" ? <BsSun /> : <BsMoon />}
       </button>
