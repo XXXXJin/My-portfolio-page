@@ -65,7 +65,7 @@ export default function Intro() {
         <a
           href="https://github.com/XXXXJin"
           target="_blank"
-          className="flex items-center p-4 bg-white rounded-full outline-none hover:scale-110 active:scale-105 transition hover:bg-slate-50 gap-2 cursor-pointer border border-black/5 dark:bg-white/10 dark:text-white/60"
+          className="flex items-center p-4 bg-white rounded-full outline-none hover:scale-110 active:scale-105 transition hover:bg-slate-50 gap-2 cursor-pointer border border-black/5 dark:bg-white/10 dark:text-white"
         >
           <BsGithub />
         </a>
