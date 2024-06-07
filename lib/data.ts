@@ -1,6 +1,7 @@
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import weatherApp from "@/public/weatherApp.png";
 
 export const links = [
   {
@@ -48,11 +49,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Comming soon...",
+    title: "Weather App",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Vue.jsで天気予報アプリを作成、都市を検索して、その都市の現在の天気と今後一週間の天気予報を表示する。データはWeatherAPIから取得",
+    tags: ["Vue", "Vue Router", "Tailwind", "Font Awesome"],
+    imageUrl: weatherApp,
+    link: "https://vue-practice-iota.vercel.app/",
   },
   {
     title: "Comming soon...",
@@ -60,6 +62,7 @@ export const projectsData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
+    link: "",
   },
   {
     title: "Comming soon...",
@@ -67,6 +70,7 @@ export const projectsData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    link: "",
   },
 ] as const;
 
